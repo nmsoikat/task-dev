@@ -19,6 +19,10 @@ const MenuSymbol = styled(Box)({
   "& span:nth-child(2)": {
     margin: "5px 0",
   },
+
+  "&:hover": {
+    cursor: "pointer",
+  },
 });
 
 const SearchBoxWrap = styled(Box)({
@@ -50,10 +54,10 @@ const SearchBox = styled("input")({
   },
 });
 
-export default function TopBarLeft() {
+export default function TopBarLeft({ leftBarHandler }) {
   return (
     <TopBarLeftWrap sx={{ mb: { xs: 4, md: 0 } }}>
-      <MenuSymbol>
+      <MenuSymbol onClick={leftBarHandler}>
         <span></span>
         <span></span>
         <span></span>

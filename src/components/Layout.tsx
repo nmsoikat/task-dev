@@ -2,6 +2,7 @@ import LeftBar from "./LeftBar";
 import TopBar from "./TopBar";
 import { styled } from "@material-ui/core/styles";
 import { Box } from "@material-ui/core";
+import { useState } from "react";
 
 const MainWrap = styled(Box)({
   backgroundColor: "#F1F3F4",
@@ -15,6 +16,11 @@ const Main = styled(Box)({
   paddingRight: "30px",
   flex: 1,
   overflow: "auto",
+  transition: ".2s",
+
+  "&.off": {
+    marginLeft: "0",
+  },
 });
 
 type LayoutProps = {
@@ -22,11 +28,21 @@ type LayoutProps = {
 };
 
 export default function Layout({ children }: LayoutProps) {
+  const [toggleClass, setToggleClass] = useState("on");
+
+  const leftBarHandler = () => {
+    if (toggleClass === "on") {
+      setToggleClass("off");
+    } else {
+      setToggleClass("on");
+    }
+  };
+
   return (
     <MainWrap>
-      <LeftBar></LeftBar>
-      <Main component="main">
-        <TopBar></TopBar>
+      <LeftBar leftBarHandlerClass={toggleClass}></LeftBar>
+      <Main component="main" className={toggleClass}>
+        <TopBar leftBarHandler={leftBarHandler}></TopBar>
         {children}
       </Main>
     </MainWrap>
