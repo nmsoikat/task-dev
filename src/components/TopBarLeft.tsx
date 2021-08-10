@@ -54,7 +54,10 @@ const SearchBox = styled("input")({
   },
 });
 
-export default function TopBarLeft({ leftBarHandler }) {
+type topBarLeftProps = {
+  leftBarHandler: any;
+};
+export default function TopBarLeft({ leftBarHandler }: topBarLeftProps) {
   return (
     <TopBarLeftWrap sx={{ mb: { xs: 4, md: 0 } }}>
       <MenuSymbol onClick={leftBarHandler}>

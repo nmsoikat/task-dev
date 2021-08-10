@@ -18,19 +18,19 @@ const Menu = styled("ul")({
     transition: ".2s",
     marginBottom: "13px",
     textDecoration: "none",
-  },
 
-  "& a:last-child": {
-    marginBottom: "0px",
-  },
+    "&:last-child": {
+      marginBottom: "0px",
+    },
 
-  "& a p": {
-    visibility: "hidden",
-    fontSize: "14px",
-  },
+    "& p": {
+      visibility: "hidden",
+      fontSize: "14px",
+    },
 
-  "& a img": {
-    width: "30px",
+    "& img": {
+      width: "30px",
+    },
   },
 
   "& a:hover, & a.active": {

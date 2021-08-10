@@ -10,7 +10,11 @@ const TopWrap = styled(Box)({
   alignItems: "center",
 });
 
-export default function TopBar({ leftBarHandler }) {
+type topBarProps = {
+  leftBarHandler: any;
+};
+
+export default function TopBar({ leftBarHandler }: topBarProps) {
   return (
     <TopWrap component="section" sx={{ flexDirection: { md: "row" } }}>
       <TopBarLeft leftBarHandler={leftBarHandler}></TopBarLeft>

@@ -30,19 +30,6 @@ const StyledTableRow = styled(TableRow)(({ theme }) => ({
   },
 }));
 
-// type tableProps = {
-//   products: Array<{
-//     id: number;
-//     name: string;
-//     category: string;
-//     brand: string;
-//     price: string;
-//     quantity: string;
-//   }>;
-// };
-
-// { products }: tableProps
-
 function table() {
   return (
     <>
