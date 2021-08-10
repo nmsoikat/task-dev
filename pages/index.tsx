@@ -13,7 +13,7 @@ export default function Home() {
       <Grid container spacing={4}>
         <Grid item xs={12} sm={6} md={4} lg={3}>
           <DisplayBox
-            imgUrl="../src/image/dbox-icon-01.png"
+            imgUrl="/image/dbox-icon-01.png"
             labelText="New  Leds"
             digit="205"
             color="colorNew"
@@ -22,7 +22,7 @@ export default function Home() {
 
         <Grid item xs={12} sm={6} md={4} lg={3}>
           <DisplayBox
-            imgUrl="../src/image/dbox-icon-02.png"
+            imgUrl="/image/dbox-icon-02.png"
             labelText="Sales"
             digit="$4021"
             color="colorSales"
@@ -31,7 +31,7 @@ export default function Home() {
 
         <Grid item xs={12} sm={6} md={4} lg={3}>
           <DisplayBox
-            imgUrl="../src/image/dbox-icon-03.png"
+            imgUrl="/image/dbox-icon-03.png"
             labelText="Orders"
             digit="80"
             color="colorOrders"
@@ -40,7 +40,7 @@ export default function Home() {
 
         <Grid item xs={12} sm={6} md={4} lg={3}>
           <DisplayBox
-            imgUrl="../src/image/dbox-icon-04.png"
+            imgUrl="/image/dbox-icon-04.png"
             labelText="Expense"
             digit="$1200"
             color="colorExpense"

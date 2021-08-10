@@ -45,15 +45,15 @@ const ArrowCrossImg = styled("img")({
 export default function TopBarRight() {
   return (
     <TopBarRightWrap sx={{ justifyContent: { md: "flex-end" } }}>
-      <ArrowCrossImg src="../image/arrow-cross.png"></ArrowCrossImg>
+      <ArrowCrossImg src="/image/arrow-cross.png"></ArrowCrossImg>
 
       <NotificationBellWrap>
-        <img src="../image/bell.png" alt="notification bell icon" />
+        <img src="/image/bell.png" alt="notification bell icon" />
         <span>3</span>
       </NotificationBellWrap>
 
       <ProfilePhoto
-        sx={{ backgroundImage: "url('../image/user-photo.png')" }}
+        sx={{ backgroundImage: "url('/image/user-photo.png')" }}
       ></ProfilePhoto>
     </TopBarRightWrap>
   );

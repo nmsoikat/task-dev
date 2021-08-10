@@ -65,7 +65,7 @@ export default function TopBarLeft() {
           placeholder="Search"
           sx={{ width: { xs: "100%", sm: "350px", lg: "503px" } }}
         ></SearchBox>
-        <img src="../image/search-icon.png" alt="search icon" />
+        <img src="/image/search-icon.png" alt="search icon" />
       </SearchBoxWrap>
     </TopBarLeftWrap>
   );
