@@ -1,4 +1,5 @@
 // import rootURL from "../config";
+import { Products } from "../data/Products";
 import Head from "next/head";
 import Table from "@material-ui/core/Table";
 import TableBody from "@material-ui/core/TableBody";
@@ -29,18 +30,20 @@ const StyledTableRow = styled(TableRow)(({ theme }) => ({
   },
 }));
 
-type tableProps = {
-  products: Array<{
-    id: number;
-    name: string;
-    category: string;
-    brand: string;
-    price: string;
-    quantity: string;
-  }>;
-};
+// type tableProps = {
+//   products: Array<{
+//     id: number;
+//     name: string;
+//     category: string;
+//     brand: string;
+//     price: string;
+//     quantity: string;
+//   }>;
+// };
 
-function table({ products }: tableProps) {
+// { products }: tableProps
+
+function table() {
   return (
     <>
       <Head>
@@ -59,7 +62,7 @@ function table({ products }: tableProps) {
             </StyledTableRow>
           </TableHead>
           <TableBody>
-            {products.map((product) => (
+            {Products.map((product) => (
               <StyledTableRow
                 key={product.id}
                 sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
@@ -90,13 +93,13 @@ function table({ products }: tableProps) {
 
 export default table;
 
-export const getStaticProps = async () => {
-  const res = await fetch(`/api/products`);
-  const products = await res.json();
+// export const getStaticProps = async () => {
+//   const res = await fetch(`${rootURL}/api/products`);
+//   const products = await res.json();
 
-  return {
-    props: {
-      products,
-    },
-  };
-};
+//   return {
+//     props: {
+//       products,
+//     },
+//   };
+// };
