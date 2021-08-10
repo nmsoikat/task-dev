@@ -1,4 +1,4 @@
-import rootURL from "../config";
+// import rootURL from "../config";
 import Head from "next/head";
 import Table from "@material-ui/core/Table";
 import TableBody from "@material-ui/core/TableBody";
