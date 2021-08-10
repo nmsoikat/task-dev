@@ -1,6 +1,5 @@
 import { Box } from "@material-ui/core";
 import { styled } from "@material-ui/core/styles";
-import Image from "next/image";
 
 const TopBarLeftWrap = styled(Box)({
   display: "flex",

@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { Box, Typography } from "@material-ui/core";
 import { styled } from "@material-ui/core/styles";
 

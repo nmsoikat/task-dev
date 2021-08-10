@@ -2,7 +2,6 @@ import Typography from "@material-ui/core/Typography";
 import { styled } from "@material-ui/core/styles";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import Image from "next/image";
 
 const Menu = styled("ul")({
   display: "flex",
