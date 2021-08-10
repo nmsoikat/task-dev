@@ -6,15 +6,15 @@ import { Box } from "@material-ui/core";
 const MainWrap = styled(Box)({
   backgroundColor: "#F1F3F4",
   display: "flex",
-  // height: "100vh",
-  height: "100%",
+  height: "100vh",
 });
 
 const Main = styled(Box)({
+  marginLeft: "125px",
   paddingLeft: "30px",
   paddingRight: "30px",
   flex: 1,
-  overflow: "scroll",
+  overflow: "auto",
 });
 
 type LayoutProps = {

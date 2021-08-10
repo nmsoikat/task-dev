@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 
 const Menu = styled("ul")({
+  margin: "0",
   display: "flex",
   flexDirection: "column",
   padding: "13px",
